@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redis Stats</title>
+</head>
+<body>
+    <h1>Redis Stats</h1>
+    {{range .}}
+    <h2>{{.Key}}</h2>
+    <p>HP: {{.Value.HP}}</p>
+    <p>Attack: {{.Value.Attack}}</p>
+    <p>Defense: {{.Value.Defense}}</p>
+    <p>Speed: {{.Value.Speed}}</p>
+    {{end}}
+</body>
+</html>
